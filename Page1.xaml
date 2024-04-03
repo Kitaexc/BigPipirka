@@ -1,0 +1,20 @@
+﻿<Page x:Class="BigPipirka.Page1"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BigPipirka"
+      mc:Ignorable="d" 
+      d:DesignHeight="560" d:DesignWidth="980"
+      Title="Page1">
+
+    <Grid>
+        <DataGrid x:Name="ClientTags"/>
+        <Button x:Name="Search" Content="Поиск" HorizontalAlignment="Left" Height="50" Margin="830,420,0,0" VerticalAlignment="Top" Width="140" Click="Search_Click"/>
+        <TextBox x:Name="Poisk" HorizontalAlignment="Left" Height="50" Margin="10,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="814" materialDesign:HintAssist.Hint="Поиск" Cursor="" FontSize="26"/>
+        <ComboBox x:Name="Vibor" HorizontalAlignment="Left" Height="50" Margin="10,480,0,0" VerticalAlignment="Top" Width="814" DisplayMemberPath="TagName" SelectionChanged="Vibor_SelectionChanged" materialDesign:HintAssist.Hint="Тыкни на меня :D" Cursor="" FontSize="26"/>
+        <Button x:Name="Search2" Content="Очистить" HorizontalAlignment="Left" Height="54" Margin="830,480,0,0" VerticalAlignment="Top" Width="140" Click="Search2_Click"/>
+    </Grid>
+</Page>
+ 
